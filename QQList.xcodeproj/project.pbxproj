@@ -14,6 +14,11 @@
 		1520FE241B3A53AA000A5717 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1520FE231B3A53AA000A5717 /* Images.xcassets */; };
 		1520FE271B3A53AA000A5717 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1520FE251B3A53AA000A5717 /* LaunchScreen.xib */; };
 		1520FE331B3A53AA000A5717 /* QQListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1520FE321B3A53AA000A5717 /* QQListTests.m */; };
+		1520FE401B3A5584000A5717 /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1520FE3F1B3A5584000A5717 /* friends.plist */; };
+		1520FE431B3A5696000A5717 /* GroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1520FE421B3A5696000A5717 /* GroupModel.m */; };
+		1520FE491B3A588D000A5717 /* FriendsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1520FE481B3A588D000A5717 /* FriendsModel.m */; };
+		1520FE4C1B3A5B2D000A5717 /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1520FE4B1B3A5B2D000A5717 /* ListTableViewController.m */; };
+		1520FE4F1B3A6D52000A5717 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1520FE4E1B3A6D52000A5717 /* HeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,15 @@
 		1520FE2C1B3A53AA000A5717 /* QQListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QQListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1520FE311B3A53AA000A5717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1520FE321B3A53AA000A5717 /* QQListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQListTests.m; sourceTree = "<group>"; };
+		1520FE3F1B3A5584000A5717 /* friends.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = friends.plist; sourceTree = "<group>"; };
+		1520FE411B3A5696000A5717 /* GroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupModel.h; sourceTree = "<group>"; };
+		1520FE421B3A5696000A5717 /* GroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupModel.m; sourceTree = "<group>"; };
+		1520FE471B3A588D000A5717 /* FriendsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsModel.h; sourceTree = "<group>"; };
+		1520FE481B3A588D000A5717 /* FriendsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsModel.m; sourceTree = "<group>"; };
+		1520FE4A1B3A5B2D000A5717 /* ListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListTableViewController.h; path = QQList/View/ListTableViewController.h; sourceTree = SOURCE_ROOT; };
+		1520FE4B1B3A5B2D000A5717 /* ListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListTableViewController.m; path = QQList/View/ListTableViewController.m; sourceTree = SOURCE_ROOT; };
+		1520FE4D1B3A6D52000A5717 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeaderView.h; path = QQList/View/HeaderView.h; sourceTree = SOURCE_ROOT; };
+		1520FE4E1B3A6D52000A5717 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeaderView.m; path = QQList/View/HeaderView.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +95,9 @@
 		1520FE151B3A53AA000A5717 /* QQList */ = {
 			isa = PBXGroup;
 			children = (
+				1520FE3E1B3A54D0000A5717 /* Controller */,
+				1520FE3D1B3A54AD000A5717 /* View */,
+				1520FE3C1B3A542E000A5717 /* Model */,
 				1520FE1A1B3A53AA000A5717 /* AppDelegate.h */,
 				1520FE1B1B3A53AA000A5717 /* AppDelegate.m */,
 				1520FE1D1B3A53AA000A5717 /* ViewController.h */,
@@ -96,6 +113,7 @@
 		1520FE161B3A53AA000A5717 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1520FE3F1B3A5584000A5717 /* friends.plist */,
 				1520FE171B3A53AA000A5717 /* Info.plist */,
 				1520FE181B3A53AA000A5717 /* main.m */,
 			);
@@ -117,6 +135,36 @@
 				1520FE311B3A53AA000A5717 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1520FE3C1B3A542E000A5717 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1520FE411B3A5696000A5717 /* GroupModel.h */,
+				1520FE421B3A5696000A5717 /* GroupModel.m */,
+				1520FE471B3A588D000A5717 /* FriendsModel.h */,
+				1520FE481B3A588D000A5717 /* FriendsModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1520FE3D1B3A54AD000A5717 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1520FE4D1B3A6D52000A5717 /* HeaderView.h */,
+				1520FE4E1B3A6D52000A5717 /* HeaderView.m */,
+			);
+			name = View;
+			path = ../QQList.xcodeproj/View;
+			sourceTree = "<group>";
+		};
+		1520FE3E1B3A54D0000A5717 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1520FE4A1B3A5B2D000A5717 /* ListTableViewController.h */,
+				1520FE4B1B3A5B2D000A5717 /* ListTableViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +249,7 @@
 			files = (
 				1520FE221B3A53AA000A5717 /* Main.storyboard in Resources */,
 				1520FE271B3A53AA000A5717 /* LaunchScreen.xib in Resources */,
+				1520FE401B3A5584000A5717 /* friends.plist in Resources */,
 				1520FE241B3A53AA000A5717 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +268,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1520FE4F1B3A6D52000A5717 /* HeaderView.m in Sources */,
 				1520FE1F1B3A53AA000A5717 /* ViewController.m in Sources */,
+				1520FE491B3A588D000A5717 /* FriendsModel.m in Sources */,
+				1520FE431B3A5696000A5717 /* GroupModel.m in Sources */,
 				1520FE1C1B3A53AA000A5717 /* AppDelegate.m in Sources */,
 				1520FE191B3A53AA000A5717 /* main.m in Sources */,
+				1520FE4C1B3A5B2D000A5717 /* ListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
